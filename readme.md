@@ -108,3 +108,13 @@ monthly_payment = {
     / ((1 + monthly_interest_rate) ** number_of_payments -1)
 }
 
+#display the repayments
+
+total_payments = monthly_payment * number_of_payments
+total_interest = total_payments - loan_amount
+
+st.write("### Repayments")
+col1, col2, col3 = st.columns(3)
+col1.metric(label="Monthly Repayments", value=f"${monethly_payment:,.2f}")
+col2.metric(label="Total Repayments", value=f"${total_repayments:,.0f}")
+col3.metric(label="Total Interest", value=f"${total_interest:,.0f}")
