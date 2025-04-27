@@ -1,4 +1,4 @@
-This is a guide on streamlit
+This is a guide on streamlit and making a mortage calculator
 
 pip intall streamlit 
 
