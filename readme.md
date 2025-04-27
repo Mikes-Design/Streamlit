@@ -47,5 +47,30 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 st.line_chart(chart_data)
 
+view: https://docs.streamlit.io/ for more methods
+
+create multipage applications by having a directory named pages with each page as a file
+
+main/
+    pages/
+        1_profile.py
+        2_dashboard.py
+
+add to 1_profile.py:
+
+import streamlit as st
+
+st.write("# Profile")
+
+add to 2_dashboard.py:
+
+import streamlit as st
+
+st.write("# Dashboard")
+
+run command line: streamlit run main/main.py
+
+
+
 
 
