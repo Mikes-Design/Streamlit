@@ -35,5 +35,17 @@ data = pd.read_csv("data.csv")
 
 st.write(data)
 
+import numpy as np
+
+add:
+
+chart_data = pd.DataFrame(
+    np.random.randn(20,3),
+    columns=["a","b","c"]
+)
+
+st.bar_chart(chart_data)
+st.line_chart(chart_data)
+
 
 
