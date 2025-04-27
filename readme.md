@@ -158,3 +158,10 @@ st.write("### Payment Schedule")
 payments_df = df[["Year", "Remaining Balance"]].groupby("Year").min()
 st.line_chart(payments_df)
 
+make a requirements.txt with:
+
+streamlit>=1.32.0
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.8.0
+
