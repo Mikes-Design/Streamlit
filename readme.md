@@ -165,3 +165,14 @@ pandas>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.8.0
 
+make a gitignore
+
+__pycache__/
+*.py[cod]
+venv/
+.env
+.streamlit/secrets.toml
+```
+
+deploy!
+
