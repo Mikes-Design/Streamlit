@@ -25,5 +25,15 @@ add:
 
 is_clicked = st.button("Click Me")
 
+Use normal markdown formating in your string
+
+import pandas as pd
+
+add:
+
+data = pd.read_csv("data.csv")
+
+st.write(data)
+
 
 
